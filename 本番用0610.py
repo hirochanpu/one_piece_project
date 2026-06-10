@@ -15,6 +15,30 @@ excel_path = os.path.join(base_dir, "ONE_PIECE_DATE_FILE_ver.13.xlsx")
 st.set_page_config(page_title="ONE PIECE 航海記", layout="wide")
 st.title("🏴‍☠️ グランドライン航海日誌")
 
+# --- 🔐 簡易パスワード検問所 ---
+def check_password():
+    """正しいパスワードが入力されたら True を返す"""
+    if "password_correct" not in st.session_state:
+        st.session_state["password_correct"] = False
+
+    if st.session_state["password_correct"]:
+        return True
+
+    st.subheader("🔑 閲覧制限エリア")
+    user_pass = st.text_input("パスワードを入力してください：", type="password")
+    
+    if user_pass:
+        if user_pass == st.secrets["auth_password"]:
+            st.session_state["password_correct"] = True
+            st.rerun()
+        else:
+            st.error("❌ パスワードが違います！")
+    return False
+
+# パスワードが合っていなければここでプログラムを止める！
+if not check_password():
+    st.stop()
+
 # --- 2. データの読み込み ---
 try:
     df_log = pd.read_excel(excel_path, sheet_name="航海日誌")
