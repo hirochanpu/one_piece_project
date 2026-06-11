@@ -557,6 +557,10 @@ try:
                         # 使用者（名前）が完全に一致する技データを綺麗に抽出するぞ！
                         if 'df_finisher' in locals() and not df_skills.empty:
                             char_skills_df = df_skills[df_skills['使用者'] == selected_char_name]
+
+                            if '通算日' in char_skills_df.columns:
+                                char_skills_df = char_skills_df[char_skills_df['通算日'] <= target_day_fac]
+
                             
                             if not char_skills_df.empty:
                                 for _, s_row in char_skills_df.iterrows():
