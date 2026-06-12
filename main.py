@@ -89,7 +89,7 @@ elif "display_total" not in st.session_state:
     st.session_state["display_total"] = read_global_counter()
 
 # 5. 【大改造】CSSの魔法で画面の一番下にひっそり文字を貼り付けるぞ！
-st.markdown(f"""
+    st.markdown(f"""
     <style>
     .hidden-footer {{
         position: fixed;
