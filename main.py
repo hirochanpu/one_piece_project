@@ -226,7 +226,7 @@ try:
         format_func=format_day_with_volume,
         key="shared_voyage_slider"
     )
-    st.markdown('</div>', unsafe_allow_html=True)
+    #st.markdown('</div>', unsafe_allow_html=True)
 
     # --- タブの作成 ---
     tab_map, tab_rank, tab_faction = st.tabs(["🗺️ リアルタイム海図", "💰 懸賞金・技ランキング", "🏴‍☠️ 勢力動向"])
