@@ -136,7 +136,7 @@ def load_excel_sheet(path, sheet_name):
         padding-left: 10px !important;
         padding-right: 10px !important;
     }
-    .sticky-header {
+        .sticky-header {
         position: -webkit-sticky;
         position: sticky;
         top: 2.875rem; 
