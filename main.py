@@ -26,7 +26,7 @@ st.title("🏴‍☠️ 偉大なる航海日誌")
 # =========================================================
 # 📖 ここから：サイトの取扱説明書（弟子への伝授スペース）
 # =========================================================
-with st.expander("ℹ️ 【取扱説明書】このサイトの遊び方（クリックで開閉します！）", expanded=False):
+with st.expander("ℹ️ 【取扱説明書】このサイトの遊び方", expanded=False):
     st.markdown("""
     ### ⚓ 概要
     このサイトは、漫画『ONE PIECE』の膨大な航海データをベースに、ルフィたちの旅路や時代の変化をリアルタイムに可視化する**「デジタル航海日誌」**を目指しています！
@@ -76,7 +76,7 @@ def load_excel_sheet(path, sheet_name):
         }
     }
     button[data-baseweb="tab"] {
-        font-size: 14px !important;
+        font-size: 12px !important;
         padding-left: 10px !important;
         padding-right: 10px !important;
     }
@@ -225,7 +225,7 @@ try:
 
     # スライダーに format_func を適用して、中身の数字を見やすく変身させる！
     target_day = st.select_slider(
-        "⚓ 航海日誌の『通算日』を選択してください（全タブ共通）", 
+        "⚓ 『通算日』を選択してください（全タブ共通）", 
         options=all_days, 
         format_func=format_day_with_volume,
         key="shared_voyage_slider"
