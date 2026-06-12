@@ -17,8 +17,8 @@ def timer(label):
 
 # --- 1. 準備：住所（パス）の整理 ---
 base_dir = os.path.dirname(__file__)
-img_path = os.path.join(base_dir, "図13.png") 
-excel_path = os.path.join(base_dir, "ONE_PIECE_DATE_FILE_ver.13.xlsx")
+img_path = os.path.join(base_dir, "世界地図.png") 
+excel_path = os.path.join(base_dir, "ONE_PIECE_DATE_FILE.xlsx")
 
 st.set_page_config(page_title="ONE PIECE 航海記", layout="wide")
 st.title("🏴‍☠️ グランドライン航海日誌")
