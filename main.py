@@ -120,7 +120,7 @@ def load_excel_sheet(path, sheet_name):
     return df
 
 # --- 📱 スマホ表示 & 固定ヘッダーのためのCSS魔法 ---
-st.markdown("""
+    st.markdown("""
     <style>
     @media (max-width: 640px) {
         [data-testid="stHorizontalBlock"] {
