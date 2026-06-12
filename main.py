@@ -98,7 +98,7 @@ elif "display_total" not in st.session_state:
         width: 100%;
         background-color: transparent; /* 背景は透明にして溶け込ませる */
         color: #a0a0a0;               /* 文字色は薄いグレーで目立たせない */
-        text-align: right;            /* 右下にひっそり配置 */
+        text-align: left;            /* 右下にひっそり配置 */
         padding-right: 20px;
         padding-bottom: 5px;
         font-size: 11px;              /* 文字サイズも極小だ */
