@@ -21,7 +21,7 @@ img_path = os.path.join(base_dir, "世界地図.png")
 excel_path = os.path.join(base_dir, "ONE_PIECE_DATE_FILE.xlsx")
 
 st.set_page_config(page_title="ONE PIECE 航海記", layout="wide")
-st.title("🏴‍☠️ グランドライン航海日誌")
+st.title("🏴‍☠️ 偉大なる航海日誌")
 
 # =========================================================
 # 📖 ここから：サイトの取扱説明書（弟子への伝授スペース）
@@ -221,7 +221,7 @@ try:
 
     # スライダーに format_func を適用して、中身の数字を見やすく変身させる！
     target_day = st.select_slider(
-        "⚓ 航海日誌の『通算日』を選択してくれ（全タブ共通だぞ！）", 
+        "⚓ 航海日誌の『通算日』を選択してください（全タブ共通）", 
         options=all_days, 
         format_func=format_day_with_volume,
         key="shared_voyage_slider"
