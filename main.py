@@ -136,7 +136,7 @@ def load_excel_sheet(path, sheet_name):
         padding-left: 10px !important;
         padding-right: 10px !important;
     }
-        .sticky-header {
+    .sticky-header {
         position: -webkit-sticky;
         position: sticky;
         top: 2.875rem; 
@@ -268,7 +268,7 @@ try:
     end_timer()
 
     # 📌 共通スライダーを画面上部に固定
-    st.markdown('<div class="sticky-header">', unsafe_allow_html=True)
+    #st.markdown('<div class="sticky-header">', unsafe_allow_html=True)
     
     # 💡 【大改造の肝】スライダーの表示用フォーマット関数
     def format_day_with_volume(day):
